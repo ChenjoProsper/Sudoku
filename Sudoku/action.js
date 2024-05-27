@@ -88,6 +88,11 @@ function saisir(id,cas,ligne,colonne,lignecas){
     if(size.length > 1 && val.value > 0){
         val.value = size[0]
     }
+    if(Math.floor(val.value) == 0){
+        val.value = ""
+        inputGrid2[Math.floor(cas)][Math.floor(lignecas)].value = val.value;
+        inputGrid[Math.floor(ligne)][Math.floor(colonne)].value =  val.value;
+    }
     if(isNaN(Math.floor(val.value))){
         val.value = ""
     }
