@@ -85,13 +85,11 @@ function getInputGrid2() {
 function saisir(id,cas,ligne,colonne,lignecas){
     var val = document.getElementById(id)
     var size = String(val.value)
-    if(size.length > 1){
+    if(size.length > 1 && val.value > 0){
         val.value = size[0]
     }
-    if(size.length<1){
+    if(isNaN(Math.floor(val.value))){
         val.value = ""
-        inputGrid2[Math.floor(cas)][Math.floor(lignecas)].value = val.value;
-        inputGrid[Math.floor(ligne)][Math.floor(colonne)].value =  val.value;
     }
     verifier(id,cas,ligne,colonne,lignecas)
 }
