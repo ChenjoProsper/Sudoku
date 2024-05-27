@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>SUDOKU</h1></div>
+    <div id="Sudoku">
+        <div class="section s1">
+            <input type="text" class="cell" id="s1" oninput="saisir('s1','0','0','0','0')">
+            <input type="text" class="cell" id="s2" oninput="saisir('s2','0','0','1','1')">
+            <input type="text" class="cell" id="s3" oninput="saisir('s3','0','0','2','2')">
+            <input type="text" class="cell" id="s4" oninput="saisir('s4','0','1','0','3')">
+            <input type="text" class="cell" id="s5" oninput="saisir('s5','0','1','1','4')">
+            <input type="text" class="cell" id="s6" oninput="saisir('s6','0','1','2','5')">
+            <input type="text" class="cell" value="4" id="s7" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s8" oninput="saisir('s8','0','2','1','7')">
+            <input type="text" class="cell" value="7" id="s9"  readonly style="background-color: bisque;">
+        </div>
+        <div class="section s2">
+            <input type="text" class="cell" value="2" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s10" oninput="saisir('s10','1','0','4','1')">
+            <input type="text" class="cell" value="8" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s11" oninput="saisir('s11','1','1','3','0')">
+            <input type="text" class="cell" value="1" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s12" oninput="saisir('s12','1','1','5','1')">
+            <input type="text" class="cell" value="6" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s13" oninput="saisir('s13','1','2','4','1')">
+            <input type="text" class="cell" value="9" readonly style="background-color: bisque;">
+        </div>
+        <div class="section s3">
+            <input type="text" class="cell" id="s14" oninput="saisir('s14','2','0','6','0')">
+            <input type="text" class="cell" id="s15" oninput="saisir('s15','2','0','7','1')">
+            <input type="text" class="cell" id="s16" oninput="saisir('s16','2','0','8','2')">
+            <input type="text" class="cell" id="s17" oninput="saisir('s17','2','1','6','3')">
+            <input type="text" class="cell" id="s18" oninput="saisir('s18','2','1','7','4')">
+            <input type="text" class="cell" id="s19" oninput="saisir('s19','2','1','8','5')">
+            <input type="text" class="cell" value="1" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s20" oninput="saisir('s20','2','2','7','7')">
+            <input type="text" class="cell" value="2" readonly style="background-color: bisque;">
+        </div>
+        <div class="section s4">
+            <input type="text" class="cell" value="7" readonly style="background-color: bisque;">
+            <input type="text" class="cell" value="4" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s21" oninput="saisir('s21','3','3','2','2')">
+            <input type="text" class="cell" id="s22" oninput="saisir('s22','3','4','0','0')">
+            <input type="text" class="cell" id="s23" oninput="saisir('s23','3','4','1','1')">
+            <input type="text" class="cell" id="s24" oninput="saisir('s24','3','4','2','5')">
+            <input type="text" class="cell" value="6" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s25" oninput="saisir('s25','3','5','1','7')">
+            <input type="text" class="cell" id="s26" oninput="saisir('s26','3','5','2','8')">
+        </div>
+        <div class="section s5">
+            <input type="text" class="cell" id="s27" oninput="saisir('s27','4','3','3','0')">
+            <input type="text" class="cell" value="3" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s28" oninput="saisir('s28','4','3','5','2')">
+            <input type="text" class="cell" value="7" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s29" oninput="saisir('s29','4','4','4','4')">
+            <input type="text" class="cell" value="2" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s30" oninput="saisir('s30','4','5','3','6')">
+            <input type="text" class="cell" id="s31" oninput="saisir('s31','4','5','4','7')">
+            <input type="text" class="cell" id="s32" oninput="saisir('s32','4','5','5','8')">
+        </div>
+        <div class="section s6">
+            <input type="text" class="cell" id="s33" oninput="saisir('s33','5','3','6','0')">
+            <input type="text" class="cell" value="2" readonly style="background-color: bisque;">
+            <input type="text" class="cell" value="9" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s34" oninput="saisir('s34','5','4','6','3')">
+            <input type="text" class="cell" id="s35" oninput="saisir('s35','5','4','7','4')">
+            <input type="text" class="cell" id="s36" oninput="saisir('s36','5','4','8','5')">
+            <input type="text" class="cell" id="s37" oninput="saisir('s37','5','5','6','6')">
+            <input type="text" class="cell" id="s38" oninput="saisir('s38','5','5','7','7')">
+            <input type="text" class="cell" value="7" readonly style="background-color: bisque;">
+        </div>
+        <div class="section s7">
+            <input type="text" class="cell" value="2" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s39" oninput="saisir('s39','6','6','1','1')">
+            <input type="text" class="cell" id="s40" oninput="saisir('s40','6','6','2','2')">
+            <input type="text" value="8" class="cell" readonly style="background-color: bisque;">
+            <input type="text" value="5" class="cell" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s41" oninput="saisir('s41','6','7','2','5')">
+            <input type="text" class="cell" value="9" readonly style="background-color: bisque;">
+            <input type="text" class="cell" value="6" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s42" oninput="saisir('s42','6','8','2','8')">
+        </div>
+        <div class="section s8">
+            <input type="text" class="cell" id="s43" oninput="saisir('s43','7','6','3','0')">
+            <input type="text" class="cell" id="s44" oninput="saisir('s44','7','6','4','1')">
+            <input type="text" class="cell" id="s45" oninput="saisir('s45','7','6','5','2')">
+            <input type="text" class="cell" id="s46" oninput="saisir('s46','7','7','3','3')">
+            <input type="text" class="cell" id="s47" oninput="saisir('s47','7','7','4','4')">
+            <input type="text" class="cell" id="s48" oninput="saisir('s48','7','7','5','5')">
+            <input type="text" class="cell" id="s49" oninput="saisir('s49','7','8','3','6')">
+            <input type="text" class="cell" value="4" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s50" oninput="saisir('s50','7','8','5','8')">
+        </div>
+        <div class="section s9">
+            <input type="text" class="cell" id="s51" oninput="saisir('s51','8','6','6','0')">
+            <input type="text" class="cell" id="s52" oninput="saisir('s52','8','6','7','1')">
+            <input type="text" class="cell" value="8" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s53" oninput="saisir('s53','8','7','6','3')">
+            <input type="text" class="cell" value="9" readonly style="background-color: bisque;">
+            <input type="text" class="cell" value="1" readonly style="background-color: bisque;">
+            <input type="text" class="cell" id="s54" oninput="saisir('s54','8','8','6','6')">
+            <input type="text" class="cell" value="7" readonly style="background-color: bisque;">
+            <input type="text" class="cell" value="5" readonly style="background-color: bisque;">
+        </div>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
